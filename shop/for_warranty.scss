@@ -1,0 +1,154 @@
+$var1: #F0F0F0;
+$var2: #0c0c6e;
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+@font-face {
+    font-family: 'Arkhip';
+    src: url("../fonts/font 1/fonts/arkhip.eot");
+    /* IE 9 Compatibility Mode */
+    src: url("../fonts/font 1/fonts/arkhip.eot?#iefix") format("embedded-opentype"), url("../fonts/font 1/fonts/arkhip.woff2") format("woff2"), url("../fonts/font 1/fonts/arkhip.woff") format("woff"), url("../fonts/font 1/fonts/arkhip.ttf") format("truetype"), url("../fonts/font 1/fonts/arkhip.svg#arkhip") format("svg");
+    /* Chrome < 4, Legacy iOS */
+  }
+html, body {
+	height: 100%;
+	background-color: $var1;
+}
+ul {
+	list-style-type: none;
+}
+.may {
+	display: flex;
+	flex-direction: column;
+	min-height: 1080px;
+	.header {
+		position: fixed;
+		width: 100%;
+		background-color: white;
+		opacity: 0.9;
+		z-index: 2;
+		.header_container {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: center;
+			min-height: 45px;
+			.logo_container {
+				padding-left: 15px;
+				flex: 0 0 100px;
+				.logo {
+					width: 90px;
+					height: 45px;
+				}
+			}
+			.nav {
+				flex: 1 1 auto;
+				.logo {
+					display: none;
+				}
+				.list {
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-around;
+				}
+			}
+			li .list li > a {
+				font-family: "Arkhip";
+				font-size: 14px;
+			}
+			.authorization {
+				flex: 0 0 150px;
+				.profile {
+					border-radius: 20px;
+					width: 40px;
+					margin-left: 25%;
+				}
+			}
+		}
+	}
+}
+a {
+	text-decoration: none;
+	color: black;
+	&:hover {
+		color: $var2;
+	}
+}
+@media(max-width:1040px){
+    .may .header .header_container{
+        .nav{
+            .list{
+                display: none;
+            }
+            .logo{
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin-left: 45%;
+            }
+            .menu_icon a{
+                display: block;
+                width: 80px;
+                height: 10px;
+            }
+        }
+        .authorization{
+            flex:0 0 100px;
+        }
+        li:hover .list {
+            display: block;
+            position: relative;
+          }
+        li:hover .list li > a {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+    }    
+}
+
+.may .main {
+	flex: 1 1 auto;
+	padding-top: 49px;
+	margin-bottom: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+	ul {
+		list-style-type: decimal;
+		padding-left: 3%;
+	}
+	ol {
+		padding-left: 5%;
+	}
+	p {
+		text-indent: 3%;
+	}
+	h2 {
+		margin: 20px 0 20px 0;
+		text-align: center;
+	}
+	.wrapper {
+		margin: 0 10px 0 10px;
+	}
+}
+
+
+.may .footer {
+	display: flex;
+	flex-direction: row;
+	font-family: "Arkhip";
+	.nav {
+		flex: 1 1 auto;
+		.list {
+			display: flex;
+			font-size: 12px;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			.logotip {
+				width: 35px;
+				height: 30px;
+			}
+		}
+	}
+}

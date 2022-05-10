@@ -1,0 +1,215 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: 'Arkhip';
+  src: url("../fonts/font 1/fonts/arkhip.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/font 1/fonts/arkhip.eot?#iefix") format("embedded-opentype"), url("../fonts/font 1/fonts/arkhip.woff2") format("woff2"), url("../fonts/font 1/fonts/arkhip.woff") format("woff"), url("../fonts/font 1/fonts/arkhip.ttf") format("truetype"), url("../fonts/font 1/fonts/arkhip.svg#arkhip") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+
+html, body {
+  height: 100%;
+  background-color: #F0F0F0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.may {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 1080px;
+}
+
+.may .header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.may .header .header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 45px;
+}
+
+.may .header .header_container .logo_container {
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+}
+
+.may .header .header_container .logo_container .logo {
+  width: 90px;
+  height: 45px;
+}
+
+.may .header .header_container .nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.may .header .header_container .nav .logo {
+  display: none;
+}
+
+.may .header .header_container .nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.may .header .header_container li .list li > a {
+  font-family: "Arkhip";
+  font-size: 14px;
+}
+
+.may .header .header_container .authorization {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 150px;
+          flex: 0 0 150px;
+}
+
+.may .header .header_container .authorization .profile {
+  border-radius: 20px;
+  width: 40px;
+  margin-left: 25%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #0c0c6e;
+}
+
+@media (max-width: 1040px) {
+  .may .header .header_container .nav .list {
+    display: none;
+  }
+  .may .header .header_container .nav .logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 45%;
+  }
+  .may .header .header_container .nav .menu_icon a {
+    display: block;
+    width: 80px;
+    height: 10px;
+  }
+  .may .header .header_container .authorization {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+  }
+  .may .header .header_container li:hover .list {
+    display: block;
+    position: relative;
+  }
+  .may .header .header_container li:hover .list li > a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.may .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-family: Lucida Sans Unicode;
+}
+
+.may .main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.may .main .wrapper .wrap {
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  font-size: 18px;
+}
+
+.may .main .wrapper .wrap ul {
+  list-style-type: decimal;
+  padding-left: 5%;
+  font-family: Lucida Sans Unicode;
+}
+
+.may .main .wrapper .wrap h2 {
+  padding: 20px 0 20px 0;
+}
+
+.may .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Arkhip";
+}
+
+.may .footer .nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.may .footer .nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.may .footer .nav .list .logotip {
+  width: 35px;
+  height: 30px;
+}
+/*# sourceMappingURL=for_delivery.css.map */

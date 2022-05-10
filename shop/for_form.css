@@ -1,0 +1,69 @@
+html, body {
+  height: 98%;
+  width: 99%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+input {
+  color: #CFCFCF;
+}
+
+.form {
+  position: relative;
+  top: 6%;
+  margin-left: 37%;
+}
+
+.form form {
+  width: 330px;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+.form .reg {
+  color: #CFCFCF;
+}
+
+.form .form_caption {
+  margin-left: 10%;
+}
+
+.form .form_caption .logotip {
+  display: inline-block;
+  width: 53px;
+  height: 44px;
+}
+
+.form #confirm {
+  background-color: #54BA44;
+  display: block;
+  width: 35%;
+  text-align: center;
+  border-radius: 5px;
+  min-width: 100px;
+}
+
+.form #email, .form #password, .form #repeat_password {
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+  .form {
+    margin-left: 0;
+  }
+  .form form {
+    width: 94%;
+  }
+}
+/*# sourceMappingURL=for_form.css.map */

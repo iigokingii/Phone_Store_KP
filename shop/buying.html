@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>корзина заказов perfectchoice</title>
+        <link href="for_buying.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="..\img\логотип\5.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="wrapper">
+            <a href="main.html"><h2>perfectchoice</h2></a>
+            <form>
+                <ul>
+                    <h1>Оформление заказа</h1>
+                    <p class="style1">1</p>
+                    <p class="style2">Способ получения</p>
+                    <div class="container">
+                        <p>Населенный пункт</p>
+                        <li>
+                            <label for="city"></label>
+                            <input type="text" id="city"placeholder="Укажите свой город" required>
+                        </li>
+                        <p>Адрес доставки</p>
+                        <p style="color:rgb(203, 203, 203) ;">(Укажите как можно подробнее адрес доставки)</p>
+                        <li>
+                            <p class="style2">Улица</p>
+                            <label for="street"></label>
+                            <input type="text" id="street" required>
+                            <p class="style2">Дом</p>
+                            <label for="house"></label>
+                            <input type="text" id="house" required>
+                            <p class="style2">Корпус</p>
+                            <label for="adr"></label>
+                            <input type="text" id="adr" required>
+                        </li>
+                        <li>
+                            <p class="style2">Под.</p>
+                            <label for="entrance"></label>
+                            <input type="text" id="entrance">
+                            <p class="style2">Этаж</p>
+                            <label for="floor"></label>
+                            <input type="text" id="floor">
+                            <p class="style2">Квартира</p>
+                            <label for="flat"></label>
+                            <input type="text" id="flat">
+                        </li>
+                        <p>Комментарий к адресу (необязательно)</p>
+                        <li>
+                            <label for="details"></label>
+                            <textarea id="details"></textarea>
+                        </li>
+                        <p style="color:rgb(203, 203, 203) ;max-width: 470px;">Расскажите, как быстрее добраться к вам, укажите код домофона или другую информацию, которая может пригодиться курьеру.</p>
+                        <p>Контактные данные: </p>
+                        <p style="color:rgb(203, 203, 203) ;">E-mail используется для оповещений об изменениях статуса заказа</p>
+                        <li>
+                            <p class="style2">Имя:</p>
+                            <label for="name"></label>
+                            <input type="text" id="name" required>
+                            <p class="style2">Фамилия:</p>
+                            <label for="surname"></label>
+                            <input type="text" id="surname">
+                        </li>
+                        <li class="style3">
+                            <div class="inf">
+                                <p>Телефон</p>
+                                <p>Подтвердите ваш номер телефона, на него будет отправлено SMS с кодом!</p>
+                                <label for="number"></label>
+                                <input type="text" id="number" required>
+                                <label for="confirm"></label>
+                                <input type="submit" id="confirm">
+                            </div>
+                        </li>
+                    </div> 
+                </ul>
+            </form>            
+        </div>
+        <div>
+            <form>
+                <ul>
+                    <h1>Оформление заказа</h1>
+                </ul>
+            </form>
+        </div>
+    </body>
+</html>

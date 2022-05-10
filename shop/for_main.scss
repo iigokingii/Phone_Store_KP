@@ -1,0 +1,228 @@
+$var1: #F0F0F0;
+$var2: #0c0c6e;
+$var3: #c48612;
+$var4: #A8A7A7;
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+@font-face {
+    font-family: 'Arkhip';
+    src: url("../fonts/font 1/fonts/arkhip.eot");
+    /* IE 9 Compatibility Mode */
+    src: url("../fonts/font 1/fonts/arkhip.eot?#iefix") format("embedded-opentype"), url("../fonts/font 1/fonts/arkhip.woff2") format("woff2"), url("../fonts/font 1/fonts/arkhip.woff") format("woff"), url("../fonts/font 1/fonts/arkhip.ttf") format("truetype"), url("../fonts/font 1/fonts/arkhip.svg#arkhip") format("svg");
+    /* Chrome < 4, Legacy iOS */
+  }
+html, body {
+	height: 100%;
+	background-color: $var1;
+}
+ul {
+	list-style-type: none;
+}
+.may {
+	display: flex;
+	flex-direction: column;
+	min-height: 1080px;
+	.header {
+		position: fixed;
+		width: 100%;
+		background-color: white;
+		opacity: 0.9;
+		z-index: 2;
+		.header_container {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: center;
+			min-height: 45px;
+			.logo_container {
+				padding-left: 15px;
+				flex: 0 0 100px;
+				.logo {
+					width: 90px;
+					height: 45px;
+				}
+			}
+			.nav {
+				flex: 1 1 auto;
+				.logo {
+					display: none;
+				}
+				.list {
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-around;
+				}
+			}
+			li .list li > a {
+				font-family: "Arkhip";
+				font-size: 14px;
+			}
+			.authorization {
+				flex: 0 0 150px;
+				.profile {
+					border-radius: 20px;
+					width: 40px;
+					margin-left: 25%;
+				}
+			}
+		}
+	}
+}
+.may .header a {
+	text-decoration: none;
+	color: black;
+	&:hover {
+		color: $var2;
+	}
+}
+.may .main a{
+	text-decoration: none;
+	color: #1313be;
+}
+@media(max-width:1040px){
+    .may .header .header_container{
+        .nav{
+            .list{
+                display: none;
+            }
+            .logo{
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin-left: 45%;
+            }
+            .menu_icon a{
+                display: block;
+                width: 80px;
+                height: 10px;
+            }
+        }
+        .authorization{
+            flex:0 0 100px;
+        }
+        li:hover .list {
+            display: block;
+            position: relative;
+          }
+        li:hover .list li > a {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+    }    
+}
+
+
+figure {
+	margin-bottom: 15%;
+	&:last-child {
+		margin-bottom: 0%;
+	}
+}
+.may .main {
+	flex: 1 1 auto;
+	.iph_background {
+		display: block;
+		width: 100%;
+		height: auto;
+		position: relative;
+		.iph_he {
+			display: block;
+			position: absolute;
+			top: 35%;
+			width: 100%;
+			text-transform: uppercase;
+			font-size: 60px;
+			letter-spacing: 4px;
+			text-align: center;
+			color: $var3;
+			font-family: "Arkhip";
+		}
+	}
+	figure .element {
+		display: block;
+		width: 65%;
+		height: auto;
+		padding-left: 15%;
+	}
+	figure .caption {
+		text-align: center;
+		font-size: 35px;
+		a{
+			display: inline-block;
+			padding: 8px;
+			border-radius: 30px;
+			font-size: 20px;
+			font-family: Tahoma, sans-serif;
+			font-style: italic;
+			margin: 10px 2% 10px 2%;
+		}
+	}
+	figure .shop {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 20%;
+	}
+	.web_inf {
+		display: block;
+		width: 100%;
+		min-height: 700px;
+		background-color: black;
+		.inf {
+			font-size: 24px;
+			color: $var4;
+			padding: 4% 4% 6% 6%;
+			img {
+				float: right;
+				width: 20%;
+				height: auto;
+			}
+		}
+	}
+}
+@media (max-width: 1040px){
+    .may .main {
+        .iph_background .iph_he {
+            font-size: 30px;
+            letter-spacing: 4px;
+            text-align: center;
+            font-family: "Arkhip";
+        }
+        figure .caption {
+            font-size: 25px;
+        }
+        figure .shop {
+            font-size: 25px;
+        }
+        .web_inf .inf {
+            font-size: 18px;
+          }
+    }
+}
+
+
+
+
+.may .footer {
+	display: flex;
+	flex-direction: row;
+	font-family: "Arkhip";
+	.nav {
+		flex: 1 1 auto;
+		.list {
+			display: flex;
+			font-size: 12px;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			.logotip {
+				width: 35px;
+				height: 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,289 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: 'Arkhip';
+  src: url("../fonts/font 1/fonts/arkhip.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/font 1/fonts/arkhip.eot?#iefix") format("embedded-opentype"), url("../fonts/font 1/fonts/arkhip.woff2") format("woff2"), url("../fonts/font 1/fonts/arkhip.woff") format("woff"), url("../fonts/font 1/fonts/arkhip.ttf") format("truetype"), url("../fonts/font 1/fonts/arkhip.svg#arkhip") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+
+html, body {
+  height: 100%;
+  background-color: #F0F0F0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.may {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 1080px;
+}
+
+.may .header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+.may .header .header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 45px;
+}
+
+.may .header .header_container .logo_container {
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+}
+
+.may .header .header_container .logo_container .logo {
+  width: 90px;
+  height: 45px;
+}
+
+.may .header .header_container .nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.may .header .header_container .nav .logo {
+  display: none;
+}
+
+.may .header .header_container .nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.may .header .header_container li .list li > a {
+  font-family: "Arkhip";
+  font-size: 14px;
+}
+
+.may .header .header_container .authorization {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 150px;
+          flex: 0 0 150px;
+}
+
+.may .header .header_container .authorization .profile {
+  border-radius: 20px;
+  width: 40px;
+  margin-left: 25%;
+}
+
+.may .header a {
+  text-decoration: none;
+  color: black;
+}
+
+.may .header a:hover {
+  color: #0c0c6e;
+}
+
+.may .main a {
+  text-decoration: none;
+  color: #1313be;
+}
+
+@media (max-width: 1040px) {
+  .may .header .header_container .nav .list {
+    display: none;
+  }
+  .may .header .header_container .nav .logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 45%;
+  }
+  .may .header .header_container .nav .menu_icon a {
+    display: block;
+    width: 80px;
+    height: 10px;
+  }
+  .may .header .header_container .authorization {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+  }
+  .may .header .header_container li:hover .list {
+    display: block;
+    position: relative;
+  }
+  .may .header .header_container li:hover .list li > a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+figure {
+  margin-bottom: 15%;
+}
+
+figure:last-child {
+  margin-bottom: 0%;
+}
+
+.may .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.may .main .iph_background {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.may .main .iph_background .iph_he {
+  display: block;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #c48612;
+  font-family: "Arkhip";
+}
+
+.may .main figure .element {
+  display: block;
+  width: 65%;
+  height: auto;
+  padding-left: 15%;
+}
+
+.may .main figure .caption {
+  text-align: center;
+  font-size: 35px;
+}
+
+.may .main figure .caption a {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: Tahoma, sans-serif;
+  font-style: italic;
+  margin: 10px 2% 10px 2%;
+}
+
+.may .main figure .shop {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20%;
+}
+
+.may .main .web_inf {
+  display: block;
+  width: 100%;
+  min-height: 700px;
+  background-color: black;
+}
+
+.may .main .web_inf .inf {
+  font-size: 24px;
+  color: #A8A7A7;
+  padding: 4% 4% 6% 6%;
+}
+
+.may .main .web_inf .inf img {
+  float: right;
+  width: 20%;
+  height: auto;
+}
+
+@media (max-width: 1040px) {
+  .may .main .iph_background .iph_he {
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: "Arkhip";
+  }
+  .may .main figure .caption {
+    font-size: 25px;
+  }
+  .may .main figure .shop {
+    font-size: 25px;
+  }
+  .may .main .web_inf .inf {
+    font-size: 18px;
+  }
+}
+
+.may .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "Arkhip";
+}
+
+.may .footer .nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.may .footer .nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.may .footer .nav .list .logotip {
+  width: 35px;
+  height: 30px;
+}
+/*# sourceMappingURL=for_main.css.map */

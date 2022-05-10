@@ -1,0 +1,61 @@
+$var1: #CFCFCF;
+$var2: #54BA44;
+
+html, body {
+	height: 98%;
+	width: 99%;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	margin-bottom: 15px;
+}
+input {
+	color: $var1;
+}
+.form {
+	position: relative;
+	top: 6%;
+	margin-left: 37%;
+	
+	form {
+		width: 330px;
+		border-radius: 15px;
+		border:2px solid black;
+	}
+	.reg {
+		color: $var1;
+	}
+	.form_caption {
+		margin-left: 10%;
+		.logotip {
+			display: inline-block;
+			width: 53px;
+			height: 44px;
+		}
+	}
+	#confirm {
+		background-color: $var2;
+		display: block;
+		width: 35%;
+		text-align: center;
+		border-radius: 5px;
+		min-width: 100px;
+	}
+	#email, #password, #repeat_password {
+		width: 60%;
+	}
+}
+@media (max-width:600px) { 
+    .form{
+        margin-left: 0;
+        form{
+            width: 94%;
+        }
+    }
+    
+}
